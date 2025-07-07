@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 import seaborn as sns
 import os
 from datetime import datetime
