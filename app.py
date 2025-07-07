@@ -15,7 +15,7 @@ st.title("🔧 Tool Wear Prediction for CNC Machining")
 
 # Sidebar for inputs
 st.sidebar.header("📌 Enter CNC Parameters")
-wear_threshold = st.sidebar.slider("🔧 Tool Wear Threshold (µm)", 40, 80, 60)
+wear_threshold = st.sidebar.slider("🔧 Tool Wear Threshold (µm)", 0, 80, 60)
 
 def get_user_input():
     cutting_speed = st.sidebar.number_input("Cutting Speed (m/min)", min_value=0.0, max_value=10000.0, value=120.0)
