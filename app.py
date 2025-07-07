@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import seaborn as sns
 import os
 from datetime import datetime
 
