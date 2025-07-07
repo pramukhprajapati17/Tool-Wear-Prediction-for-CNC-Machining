@@ -18,7 +18,7 @@ st.sidebar.header("📌 Enter CNC Parameters")
 wear_threshold = st.sidebar.slider("🔧 Tool Wear Threshold (µm)", 40, 80, 60)
 
 def get_user_input():
-    cutting_speed = st.sidebar.number_input("Cutting Speed (m/min)", min_value=0.0, max_value=1000.0, value=120.0)
+    cutting_speed = st.sidebar.number_input("Cutting Speed (m/min)", min_value=0.0, max_value=10000.0, value=120.0)
     feed_rate = st.sidebar.number_input("Feed Rate (mm/rev)", min_value=0.0, max_value=1.0, value=0.3)
     depth_of_cut = st.sidebar.number_input("Depth of Cut (mm)", min_value=0.0, max_value=5.0, value=1.5)
     spindle_speed = st.sidebar.number_input("Spindle Speed (RPM)", min_value=0, max_value=10000, value=1500)
